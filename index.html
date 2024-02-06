@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7835404e8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="header">
+        <div class="container2">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./projimages/ourlogo.jpeg" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Acount</a></li>
+                        
+                </ul>
+                </nav>
+                <i class="fa-solid fa-cart-arrow-down" style="width: 30px; color: black; position: fixed;"></i>
+                <span class="spn">0</span>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="menutoggle()"></i>
+               </div>
+               <div class="row">
+                <div class="colum-2">
+                    <h1>Place your order and<br> We deliver<br>your  food of choice</h1>
+                    <p>Amala, Varieties of rice, pounded yam, Eba with efo riro.. All kinds of food!</p>
+                    <a href="" class="btn">Menu &#10095;</a>
+                </div>
+                <div class="colum-2">
+                    <img src="./projimages/femoree-kn_ANxnwCQ0-unsplash-removebg-preview (1).png" alt="" srcset="">
+                </div>
+
+               </div>
+        </div>
+       
+    </div>
+    
+    <div class="categories">
+
+       
+<!--food sections-->
+<div class="small-container">
+    <h2 class="title">
+        Food List...
+    </h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="./projimages/localfood.jpeg" alt="" srcset="">
+            <h4>White rice with stew </h4> 
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="shop-cart">
+            <h1 class="cart-title">Our Cart</h1>
+            <!------cart content-->
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="./projimages/amalawithgbegiri.jpeg" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Amala with Gbegiri</div>
+                        <div class="cart-price">N 1500</div>
+                        <input type="number" value="1" class="cart-quantity">
+                        <!-----remove cart-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/femoree-_VRo59IsqLo-unsplash.jpg" alt="" srcset="">
+            <h4>White rice with tomatoe sauce</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/ke-vin-szQFiGZH8wU-unsplash.jpg" alt="" srcset="">
+            <h4>White rice with boiled Egg</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-0"></i>
+            </div>
+            <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/amalawithgbegiri.jpeg" alt="" srcset="">
+            <h4>Amala with gbegiri</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+
+        <div class="col-4">
+            <img src="./projimages/localfood.jpeg" alt="" srcset="">
+            <h4>White rice with stew </h4> 
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/femoree-_VRo59IsqLo-unsplash.jpg" alt="" srcset="">
+            <h4>White rice with tomatoe sauce</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/ke-vin-szQFiGZH8wU-unsplash.jpg" alt="" srcset="">
+            <h4>White rice with boiled Egg</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-0"></i>
+            </div>
+            <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/amalawithgbegiri.jpeg" alt="" srcset="">
+            <h4>Amala with gbegiri</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/localfood.jpeg" alt="" srcset="">
+            <h4>White rice with stew </h4> 
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/femoree-_VRo59IsqLo-unsplash.jpg" alt="" srcset="">
+            <h4>White rice with tomatoe sauce</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/ke-vin-szQFiGZH8wU-unsplash.jpg" alt="" srcset="">
+            <h4>White rice with boiled Egg</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-0"></i>
+            </div>
+            <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/amalawithgbegiri.jpeg" alt="" srcset="">
+            <h4>Amala with gbegiri</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        
+    </div>
+<!--------Foodlist section-->
+    <h2 class="title">
+        New Food List...
+    </h2>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="./projimages/ricewithdodo.jpeg" alt="" srcset="">
+            <h4>White rice with stew</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/semo.jpeg" alt="" srcset="">
+            <h4>White rice with tomatoe sauce</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/amala.jpeg" alt="" srcset="">
+            <h4>White rice with boiled Egg</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-0"></i>
+            </div>
+            <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        <div class="col-4">
+            <img src="./projimages/jollof.jpeg" alt="" srcset="">
+            <h4>White rice with stew</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
+            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+        </div>
+        
+    </div>
+</div>
+
+<!--offer ---------->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="./projimages/asun.jpeg" class="offer-img" alt="" srcset="">
+            </div>
+            <div class="col-2">
+                <p>Exclusive Package on Food4life</p>
+                <h1>Grill Asun made for U</h1>
+                <small>You can always reach out to us for all kinds of parties
+                    and occassions....just a dial away!!!
+                </small>
+                <a href="" class="btn1">Offer &#10095;</a>
+               
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--foorter----->
+<div class="footer">
+    <div class="containerf">
+        <div class="row">
+            <div class="footer-col-1">
+                <h2>Make enquiry</h2>
+                <p>You can get in tourch with us through our contact and all our social medial handles</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="./projimages/ourlogo.jpeg" alt="" srcset="">
+                <p>Our purpose Is To Sustainably Make the Pleasure
+                    and Benefits of accessing fast and delicious food at 
+                your confort </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <li>Promo</li>
+                <li>Return Policy</li>
+                <li>Post</li>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us </h3>
+                <li>Facebook <i class="fa-brands fa-facebook" style="color: rgba(39, 130, 234, 0.849); cursor: pointer;"></i></li>
+                <li>Whatsapp <i class="fa-brands fa-whatsapp" style="color: rgb(155, 236, 111); cursor: pointer;"></i></li>
+                <li>Instagram <i class="fa-brands fa-instagram" style="cursor: pointer;"></i></li>
+                <li>X <i class="fa-brands fa-twitter" style="cursor: pointer;"></i></li>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright Appclick-October-Cohort 2024</p>
+
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

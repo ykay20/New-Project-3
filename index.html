@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <script src="https://kit.fontawesome.com/7835404e8d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,16 +20,15 @@
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Acount</a></li>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#Products">Products</a></li>
+                        <li><a href="../New-Project-3/home/Signinpage/loginpage.html">Acount</a></li>
                         
                 </ul>
                 </nav>
-                <i class="fa-solid fa-cart-arrow-down" style="width: 30px; color: black; position: fixed;"></i>
-                <span class="spn">0</span>
+                <i class="fa-solid fa-cart-arrow-down" id="carts"></i>
                 <i class="fa-solid fa-bars" id="menu-icon" onclick="menutoggle()"></i>
                </div>
                <div class="row">
@@ -40,17 +40,19 @@
                 <div class="colum-2">
                     <img src="./projimages/backimg-removebg-preview.png" alt="" srcset="">
                 </div>
-
+                
+                </div>
                </div>
         </div>
-       
+        
     </div>
     
     <div class="categories">
+      
 
        
 <!--food sections-->
-<div class="small-container">
+<div class="small-container" id="Products">
     <h2 class="title">
         Food List...
     </h2>
@@ -66,23 +68,9 @@
                 <i class="fa-regular fa-star"></i>
             </div>
             <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn0" onclick="addToCart( 'projimages/localfood.jpeg', 'White rice with stew', 'N1,500.00')">Add to cart </button></div>
         </div>
-        <div class="shop-cart">
-            <h1 class="cart-title">Our Cart</h1>
-            <!------cart content-->
-            <div class="cart-content">
-                <div class="cart-box">
-                    <img src="./projimages/amalawithgbegiri.jpeg" alt="" class="cart-img">
-                    <div class="detail-box">
-                        <div class="cart-product-title">Amala with Gbegiri</div>
-                        <div class="cart-price">N 1500</div>
-                        <input type="number" value="1" class="cart-quantity">
-                        <!-----remove cart-->
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <div class="col-4">
             <img src="./projimages/femoree-_VRo59IsqLo-unsplash.jpg" alt="" srcset="">
             <h4>White rice with tomatoe sauce</h4>
@@ -94,7 +82,7 @@
                 <i class="fa-regular fa-star"></i>
             </div>
             <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn2" onclick="addToCart( 'projimages/femoree-_VRo59IsqLo-unsplash.jpg', 'White rice with tomatoe sauce', 'N2,000.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/ke-vin-szQFiGZH8wU-unsplash.jpg" alt="" srcset="">
@@ -106,8 +94,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star-half-0"></i>
             </div>
-            <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,500  </p>
+            <div class="btn-4"><button id="btn3" onclick="addToCart( 'projimages/ke-vin-szQFiGZH8wU-unsplash.jpg', 'White rice with boiled Egg', 'N2,500.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/amalawithgbegiri.jpeg" alt="" srcset="">
@@ -120,7 +108,7 @@
                 <i class="fa-regular fa-star"></i>
             </div>
             <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn4" onclick="addToCart( 'projimages/amalawithgbegiri.jpeg', 'Amala with gbegiri', 'N1,500.00')">Add to cart </button></div>
         </div>
 
         <div class="col-4">
@@ -133,8 +121,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration-line: line-through;">N</span>2,500</p>
+            <div class="btn-4"><button id="btn5" onclick="addToCart( 'projimages/localfood.jpeg', 'White rice with stew', 'N2,500.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/femoree-_VRo59IsqLo-unsplash.jpg" alt="" srcset="">
@@ -146,8 +134,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration-line: line-through;">N</span>3,000</p>
+            <div class="btn-4"><button id="btn6" onclick="addToCart( 'projimages/femoree-_VRo59IsqLo-unsplash.jpg', 'White rice with tomatoe sauce', 'N3,000.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/ke-vin-szQFiGZH8wU-unsplash.jpg" alt="" srcset="">
@@ -160,7 +148,7 @@
                 <i class="fa-regular fa-star-half-0"></i>
             </div>
             <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn7" onclick="addToCart( 'projimages/ke-vin-szQFiGZH8wU-unsplash.jpg', 'White rice with boiled Egg', 'N2,000.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/amalawithgbegiri.jpeg" alt="" srcset="">
@@ -172,8 +160,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration-line: line-through;">N</span>2,500</p>
+            <div class="btn-4"><button id="btn8" onclick="addToCart( 'projimages/amalawithgbegiri', 'Amala with gbegiri', 'N2,500.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/localfood.jpeg" alt="" srcset="">
@@ -185,8 +173,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration-line: line-through;">N</span>3,500</p>
+            <div class="btn-4"><button id="btn9" onclick="addToCart( 'projimages/localfood.jpeg', 'White rice with stew', 'N3,500.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/femoree-_VRo59IsqLo-unsplash.jpg" alt="" srcset="">
@@ -198,8 +186,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration-line: line-through;">N</span>3,000</p>
+            <div class="btn-4"><button id="btn10" onclick="addToCart( 'projimages/femoree-_VRo59IsqLo-unsplash.jpg', 'White rice with tomatoe sauce', 'N3,000.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/ke-vin-szQFiGZH8wU-unsplash.jpg" alt="" srcset="">
@@ -212,7 +200,7 @@
                 <i class="fa-regular fa-star-half-0"></i>
             </div>
             <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn11" onclick="addToCart( 'projimages/ke-vin-szQFiGZH8wU-unsplash.jpg', 'White rice with boiled Egg', 'N2,000.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/amalawithgbegiri.jpeg" alt="" srcset="">
@@ -225,11 +213,11 @@
                 <i class="fa-regular fa-star"></i>
             </div>
             <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn12" onclick="addToCart( 'projimages/amalawithgbegiri.jpeg', 'Amala with gbegiri', 'N1,500.00')">Add to cart </button></div>
         </div>
         
     </div>
-<!--------Foodlist section-->
+<!------New Foodlist section-->
     <h2 class="title">
         New Food List...
     </h2>
@@ -237,7 +225,7 @@
     <div class="row">
         <div class="col-4">
             <img src="./projimages/ricewithdodo.jpeg" alt="" srcset="">
-            <h4>White rice with stew</h4>
+            <h4>White rice with Plantane</h4>
             <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -245,12 +233,12 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration-line: line-through;">N</span>3,500</p>
+            <div class="btn-4"><button id="btn13" onclick="addToCart( 'projimages/ricewithdodo.jpeg', 'White rice with Plantane', 'N3,500.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/semo.jpeg" alt="" srcset="">
-            <h4>White rice with tomatoe sauce</h4>
+            <h4>Semo</h4>
             <div class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -259,7 +247,7 @@
                 <i class="fa-regular fa-star"></i>
             </div>
             <p> <span style="text-decoration-line: line-through;">N</span>2,000</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn14" onclick="addToCart( 'projimages/semo.jpeg', 'Semo', 'N2,000.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/amala.jpeg" alt="" srcset="">
@@ -272,7 +260,7 @@
                 <i class="fa-regular fa-star-half-0"></i>
             </div>
             <p> <span style="text-decoration: line-through;">N3,000</span>  <span style="text-decoration-line: line-through;">N</span>2,000  </p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <div class="btn-4"><button id="btn15" onclick="addToCart( 'projimages/amala.jpeg', 'White rice with boiled Egg', 'N3,000.00')">Add to cart </button></div>
         </div>
         <div class="col-4">
             <img src="./projimages/jollof.jpeg" alt="" srcset="">
@@ -284,15 +272,15 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p> <span style="text-decoration-line: line-through;">N</span>1,500</p>
-            <div class="btn-4"><button class="add-cart">Add to cart </i></button> <i class="fa fa-cart-plus"></i></div>
+            <p> <span style="text-decoration-line: line-through;">N</span>2,500</p>
+            <div class="btn-4"><button id="btn16" onclick="addToCart( 'projimages/jollof.jpeg', 'White rice with stew', 'N2,500.00')">Add to cart </button></div>
         </div>
         
     </div>
 </div>
 
 <!--offer ---------->
-<div class="offer">
+<div class="offer" id="Contact">
     <div class="small-container">
         <div class="row">
             <div class="col-2">
@@ -313,7 +301,7 @@
 </div>
 
 <!--foorter----->
-<div class="footer">
+<div class="footer" id="Contact">
     <div class="containerf">
         <div class="row">
             <div class="footer-col-1">

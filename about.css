@@ -1,0 +1,11 @@
+.colum-2{
+    
+    background: radial-gradient(#eee, black);
+    width: 100%;
+    height: 100vh;
+}
+
+.about{
+    margin-left: 500px;
+    padding-top: 200px;
+}

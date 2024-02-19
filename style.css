@@ -42,9 +42,9 @@ a{
 }
 
 .container2{
-    max-width: 900px;
+    max-width: 1080px;
     height: 100vh;
-    margin-left: 130px;
+    margin-left: 100px;
     padding-left: 10px;
     padding-right: 15px;
 }
@@ -75,17 +75,17 @@ a{
 }
 .colum-2{
     flex-basis: 50%;
-    min-width: 300px;
+    width: 400px;
 }
 .colum-2 img{
-    max-width: 300px;
+    width: 300px;
     padding: 50px 0;
     border-radius:50px
 }
 .colum-2 h1{
 font-size: 40px;
 line-height: 40px;
-margin: 25px 0;
+margin: 15px 0;
 color: rgb(172, 166, 36);
 }
 .colum-2 p{
@@ -95,7 +95,6 @@ color: rgb(172, 166, 36);
 }
 .btn{
     display: inline-block;
-    position: fixed;
     background: #ff523b;
     color: #fff;
     padding: 8px 30px;
@@ -279,14 +278,15 @@ li{
     font-size: 14px;
 }
 
-#menu-icon{
-    width: 28px;
-    margin-left: 30px;
+.fa-bars{
     display: none;
 }
 
+
+
 #carts{
-    color: rgb(70, 215, 70);
+    color: #333;
+    padding-right: 30px;
 }
 
 
@@ -356,19 +356,6 @@ th:last-child{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----Media query for 800px-----*/
 
 @media only screen and (max-width:800px) {
@@ -377,11 +364,16 @@ nav ul{
     position: absolute;
     top: 70px;
     left: 0;
-    background: #333;
     width: 100%;
     overflow: hidden;
     transition: 0.5s;
 }
+/* .background-img{ 
+     display: block;
+
+    width: 50px;
+    height: 50px;
+}*/
 
 nav ul li{
     display: block;
@@ -393,11 +385,11 @@ nav ul li{
 nav ul li a{
     color: #fff;
 }
-
-#menu-icon{
+.fa-bars{
     display: block;
     cursor: pointer;
 }
+
 
 }
 
@@ -409,10 +401,17 @@ nav ul li a{
 }
 .col-2, .col-3, .col-4{
     flex-basis: 100%;
+
+    
 }
 
-.cart-infor p{
-display: none;
+.background-img{
+    display: block;
 }
+
+
+
+
+
 }
 
